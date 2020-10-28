@@ -1,6 +1,6 @@
 {{#each this.parts as |part|}}
   {{#if part.string}}
-    {{~""~}}<this.component @url={{part}} />{{~""~}}
+    {{~""~}}<this.component @url={{part}} ...attributes />{{~""~}}
   {{else}}
     {{~""~}}{{part}}{{~""~}}
   {{/if}}
